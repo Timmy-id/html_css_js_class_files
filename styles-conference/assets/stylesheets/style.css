@@ -97,6 +97,11 @@ body {
 }
 .col-2-3 {
   width: 66.66%;
+  color: blue;
+}
+
+.col-2-3 h2 {
+  color: red;
 }
 
 /*
