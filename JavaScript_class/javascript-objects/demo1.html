@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Learning JavaScript Objects</h2>
+    <p id="objects-demo"></p>
+
+    <script>
+        const car = {
+            Name: "BMW",
+            Make: "Germany",
+            model: 2020,
+            Color: "Silver"
+        }
+
+        document.getElementById("objects-demo").innerHTML = 
+            car.Name + " is made in " + car.Make + "." + " The model number is " + car.model + " and the color is " + car.Color + "."
+    </script>
+</body>
+</html>

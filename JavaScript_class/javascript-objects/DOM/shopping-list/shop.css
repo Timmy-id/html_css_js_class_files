@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* height: 100vh; */
+    width: 100%;
+    background: #6461a0;
+}
+
+.container {
+    margin: 120px auto;
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .input-section {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-section input {
+    outline: none;
+    width: 80%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+.input-section button {
+    width: 100px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #9da061;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input-section button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container .items-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.items-list li {
+    list-style-type: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+
+.items-list li span {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    width: 70px;
+    text-align: center;
+    border-radius: 3px;
+    background: #e74c3c;
+    cursor: pointer;
+}
+
+.items-list:hover span {
+
+}
+
+.container .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    outline: none;
+    background: #9da061;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
