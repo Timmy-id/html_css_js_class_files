@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form id="scoreForm" onsubmit="return validateScore()">
+        <label>Text Validation
+            <div id="scoreField">
+                <input type="number" name="score" id="score">
+            </div> 
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script type="text/javascript">
+        function isAnInteger(val) {
+            const intRegex = /^\s*(\+|-)?\d+\s*$/
+            return String(val).search(intRegex);
+        }
+
+        function validateScore() {
+            if (!isAnInteger(document.getElementById('score').value))
+                return false
+            return true
+        }
+    </script>
+</body>
+</html>
