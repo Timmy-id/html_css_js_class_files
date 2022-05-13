@@ -89,9 +89,9 @@ body {
     cursor: pointer;
 }
 
-.items-list:hover span {
+/* .items-list:hover span {
 
-}
+} */
 
 .container .footer {
     display: flex;
