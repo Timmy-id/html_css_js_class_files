@@ -8,8 +8,13 @@
   - myObj = {}
 - An object can also be created using the new keyword.
   - const car = new Object()
-  - car.year = 2020
+- To add a new property to an existing object,
+  - Dot notation
+    - car.year = 2020
+  - Bracket notation
+    car['make'] = 'Toyota'
 - An object must be addressed by a reference and not by a value.
+
 
 ### Object Properties
 

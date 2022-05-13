@@ -7,13 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 class="page-header">This is DOM</h1>
+    <div>
+        <p class="first-p">I am decribing how the DOM works</p>
+        <p>I am decribing how the DOM works</p>
+        <p>I am decribing how the DOM works</p>
+    </div>
     
     <script>
-        //change the background color to red
-        document.body.style.background = "red"
-
-        //change it back after 1s
-        setTimeout(() => document.body.style.background = "", 1000)
+        const div = document.querySelector('div');
+        const p = document.querySelector('p');
+        const newP = document.createTextNode('p')
+        const header = document.getElementsByClassName('page-header');
+        p.innerHTML = "I have been changed"
+        p.setAttribute('class', 'new-p')
+        // console.log(newP)
+        // console.log(p.getAttribute('class'));
+        // console.log(div.children);
+        // console.log(header)
+        window.addEventListener('click', () => {
+            alert('Hello world')
+        })
+        window.addEventListener('keydown', (e) => {
+            if (e.key == "Enter") {
+                document.body.style.background = 'green'
+            }
+        })
+    
     </script>
 </body>
 </html>
